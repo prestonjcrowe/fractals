@@ -1,15 +1,13 @@
 var frames = 0;
 
 function setup() {
-
-}
-
-function draw() {
   createCanvas(windowHeight,windowHeight);
   background(0, 0, 0);
   rectMode(CENTER);
-  tri(width / 2, height / 2, width);
+}
 
+function draw() {
+  tri(width / 2, height / 2, width);
   frames++;
 }
 
@@ -50,11 +48,3 @@ function sierpinki(x, y, size, lvl) {
     }
   }  
 }
-
-function carpet(x, y, size, lvl) {
-  if (lvl == 0) {
-
-  } else {
-  }
-}
-
